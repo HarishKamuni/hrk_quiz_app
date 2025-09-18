@@ -1,9 +1,11 @@
 import React from 'react';
 import QuizStart from './QuizStart';
+import ProgressBar from './ProgressBar';
 
 const Quiz = () => {
   return (
-    <QuizStart />
+    <ProgressBar />
+    // <QuizStart />
     //Quiz component
     // <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-8 px-4">
     //   <div className="max-w-4xl mx-auto mb-8">
