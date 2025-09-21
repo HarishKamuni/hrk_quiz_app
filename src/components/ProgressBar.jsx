@@ -16,7 +16,7 @@ const ProgressBar = () => {
                 <div className='bg-gradient-to-r from-blue-500 to-purple-600 h-full rounded-full transition-all duration-500 ease-out shadow-sm'></div>
             </div>
 
-            {/* break */}
+            {/* break again */}
       </div>
     );
 };
