@@ -2,10 +2,12 @@ import React from 'react';
 import QuizStart from './QuizStart';
 import ProgressBar from './ProgressBar';
 import Timer from './Timer';
+import Questions from './Questions';
 
 const Quiz = () => {
   return (
-    <Timer />
+    <Questions />
+    // <Timer />
     // <ProgressBar />
     // <QuizStart />
     //Quiz component
