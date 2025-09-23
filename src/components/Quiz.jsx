@@ -1,10 +1,12 @@
 import React from 'react';
 import QuizStart from './QuizStart';
 import ProgressBar from './ProgressBar';
+import Timer from './Timer';
 
 const Quiz = () => {
   return (
-    <ProgressBar />
+    <Timer />
+    // <ProgressBar />
     // <QuizStart />
     //Quiz component
     // <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-8 px-4">
