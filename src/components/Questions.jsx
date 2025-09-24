@@ -42,6 +42,7 @@ const Questions = () => {
             <ArrowRight size={20} />
             <span>Next</span>
           </button>
+          {/* break */}
         </div>
       </div>
     </div>
