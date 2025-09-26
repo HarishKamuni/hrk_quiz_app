@@ -58,6 +58,7 @@ const Results = () => {
             <RefreshCw size={24} className="pr-2" />
             Take Quiz Again
           </button>
+          {/* break */}
         </div>
       </div>
     </div>
