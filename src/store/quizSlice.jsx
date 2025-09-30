@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
-  question: [],
+  questions: [],
   currentQuestionIndex: 0,
   answers: [],
   isQuizCompleted: false,
