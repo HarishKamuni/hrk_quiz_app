@@ -13,7 +13,22 @@ const initialState = {
 const quizSlice = createSlice({
   name: 'quiz',
   initialState,
-  reducers: {},
+  reducers: {
+    setQuestions: (state, action) => {
+      state.questions = action.payload;
+    },
+    startQuiz: (state) => {
+      state.currentQuestionIndex = 0;
+      state.answers = [];
+      state.isQuizCompleted = false;
+      state.score = 0;
+      state.timeLeft = 300;
+      state.isTimerActive = true;
+      state.showExplaination = false;
+    },
+  },
 });
+
+export const { setQuestions, startQuiz } = quizSlice.actions;
 
 export default quizSlice.reducer;
