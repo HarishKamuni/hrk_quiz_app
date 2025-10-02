@@ -10,6 +10,7 @@ import { sampleQuestions } from '../data/questions';
 
 const Quiz = () => {
   const dispatch = useDispatch();
+  // break
 
   //load the question
   useEffect(() => {
