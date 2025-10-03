@@ -47,11 +47,10 @@ const Quiz = () => {
 
   // Quiz start
   if (!isTimerActive && answers.length === 0) {
-    console.log(!isTimerActive);
-    console.log(answers.length);
+   
 
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center py-8 px-4">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-8 px-4">
         <QuizStart />
       </div>
     );
@@ -63,7 +62,10 @@ const Quiz = () => {
         <div className="bg-white rounded-xl shadow-lg p-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
             <div className="flex-1">
-              <ProgressBar />
+              <ProgressBar
+                current={currentQuestionIndex + 1}
+                total={questions.length}
+              />
             </div>
             <div className="md:ml-6">
               <Timer />

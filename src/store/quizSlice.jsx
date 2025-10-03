@@ -26,9 +26,16 @@ const quizSlice = createSlice({
       state.isTimerActive = true;
       state.showExplaination = false;
     },
+    decreamentTimer: (state) => {
+      if (state.timeLeft > 0 && state.isTimerActive) {
+        state.timeLeft -= 1;
+      } else if (state.timeLeft === 0) {
+        (state.isQuizCompleted = true), (state.isTimerActive = false);
+      }
+    },
   },
 });
 
-export const { setQuestions, startQuiz } = quizSlice.actions;
+export const { setQuestions, startQuiz, decreamentTimer } = quizSlice.actions;
 
 export default quizSlice.reducer;
