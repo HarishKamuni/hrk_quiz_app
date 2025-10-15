@@ -7,7 +7,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <Quiz />
-    {/* break */}
+   
     </Provider>
   );
 };
